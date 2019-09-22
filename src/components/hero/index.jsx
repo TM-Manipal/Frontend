@@ -1,6 +1,6 @@
 import React from "react";
 import TechnoImg from "../../assets/tm.png";
-import { Row, Col, Button, Container } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 import "./style.css";
 
 export default class Hero extends React.Component {

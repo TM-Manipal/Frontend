@@ -15,7 +15,7 @@ export default class Home extends React.Component {
 
   componentWillMount = () => {
 
-    fetch("http://15.206.28.152:3005/events/")
+    fetch("http://"+ process.env.REACT_APP_API_URL + ":" + process.env.REACT_APP_API_PORT +"/events/")
       .then(res => res.json())
       .then(
         async (result) => {

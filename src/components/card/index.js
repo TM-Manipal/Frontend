@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 
 class Card extends React.Component {
   constructor(props) {
@@ -15,8 +15,14 @@ class Card extends React.Component {
     return (
       <Row className="event-detail-container">
         <Col md="3">
-          <img width={"100%"} src={this.props.poster} alt="poster"/>
-          <Col style={{position: "relative", top:"10px"}} md={{size: 3, offset: 3}}>
+          <img width="100%"
+            src={require(`../../assets/${this.props.name.replace(
+              /[\s-]+/g,
+              "_"
+            )}.png`)}
+            alt=""
+          />
+          <Col style={{marginTop: "15px", marginBottom:"15px", textAlign: "center"}}>
             <Button color="primary">Register</Button>
           </Col>
         </Col>
@@ -26,9 +32,9 @@ class Card extends React.Component {
           <p>{this.props.description}</p>
           <ul>
           {
-            this.props.rules.map(rule => {
+            this.props.rules.map((rule, i) => {
               return (
-                  <li>
+                  <li key={i}>
                     {rule}
                   </li>
               )
@@ -36,15 +42,16 @@ class Card extends React.Component {
           }
           </ul>
           {
-            this.props.eventHeads.map(head => {
+            this.props.eventHeads.map((head, i) => {
               return (
-                <div>
+                <div key={i}>
                   {head.name}: {head.contact}
                 </div>
               )
             })
           }
           Venue: {this.props.venue} AB4
+          <hr/>
         </Col>
       </Row>
     );

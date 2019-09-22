@@ -15,7 +15,7 @@ const App = () => {
       <Container>
           <Router>
             <Home path="/" />
-            <Event path="/event" />
+            <Event path="/events" />
           </Router>
       </Container>
     </div>

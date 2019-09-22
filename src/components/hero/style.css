@@ -1,0 +1,24 @@
+.hero-container{
+  height: 90vh;
+}
+
+.hero-btn{
+  text-align: center;
+  margin-top: 24px;
+}
+
+.hero-main {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.tm-image {
+  width: 100%;
+}
+
+
+@media only screen and (max-width : 512px) {
+  .hero-container { height:  70vh;}
+}

@@ -1,0 +1,24 @@
+.theme-main-container{
+  background-color: #f5f5f5;
+  padding: 60px;
+}
+
+.theme-header{
+  text-align: center;
+  font-size: 34px;
+}
+
+.theme-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-content-container{
+  font-size: 20px;
+}
+
+.duck-img {
+  width: 100%;
+  padding: 0px 60px ;
+}

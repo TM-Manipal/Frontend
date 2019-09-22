@@ -1,11 +1,17 @@
 .theme-main-container{
   background-color: #f5f5f5;
-  padding: 60px;
+  padding: 60px 0px;
 }
 
 .theme-header{
   text-align: center;
-  font-size: 34px;
+  font-size: 64px;
+  line-height: 54px;
+  margin-bottom: 32px;
+}
+
+.theme-sub-header{
+  color: #d8637e;
 }
 
 .theme-container{
@@ -15,10 +21,17 @@
 }
 
 .theme-content-container{
-  font-size: 20px;
+  font-size: 19px;
+  text-align: center;
 }
 
 .duck-img {
   width: 100%;
-  padding: 0px 60px ;
+  padding: 0px 20px ;
+}
+
+@media only screen and ( max-width : 766px ) {
+  .duck-img {
+    margin-top: 32px;
+  }
 }

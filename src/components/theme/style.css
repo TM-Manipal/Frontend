@@ -5,7 +5,7 @@
 
 .theme-header{
   text-align: center;
-  font-size: 34px;
+  font-size: 64px;
 }
 
 .theme-container{
@@ -15,10 +15,10 @@
 }
 
 .theme-content-container{
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .duck-img {
   width: 100%;
-  padding: 0px 60px ;
+  padding: 0px 20px ;
 }

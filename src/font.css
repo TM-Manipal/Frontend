@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Arcade Classic';
+  src: local('Arcade Classic'), local('Arcade Classic'),
+      url("./fonts/arcadeclassic-webfont.woff") format("woff"),
+      url("./fonts/arcadeclassic-webfont.woff2") format("woff2"),
+      url("./fonts/arcadeclassic-webfont.TTF") format("truetype");
+}

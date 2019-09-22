@@ -13,7 +13,7 @@ export default class Hero extends React.Component {
               <img className="tm-image" src={TechnoImg} alt="" />
             </Col>
             <Col className="hero-btn">
-              <Button color="primary">{" Start "}</Button>
+              <Button color="primary">Register</Button>
             </Col>
           </div>
         </Row>

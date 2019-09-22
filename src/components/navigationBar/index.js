@@ -7,7 +7,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  Button
 } from 'reactstrap';
 
 class NavigationBar extends React.Component {
@@ -29,6 +30,7 @@ class NavigationBar extends React.Component {
       <div>
         <Navbar color="white" light expand="md">
           <NavbarBrand href="/">TechnoMelange</NavbarBrand>
+          
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -39,7 +41,7 @@ class NavigationBar extends React.Component {
                 <NavLink >Theme</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink >Event</NavLink>
+                <NavLink >Events</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

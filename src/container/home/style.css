@@ -1,0 +1,48 @@
+.hero-container{
+  height: 90vh;
+}
+
+.hero-btn{
+  text-align: center;
+  margin-top: 24px;
+}
+
+.test {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tm-image {
+  width: 100%;
+}
+
+.theme-header{
+  text-align: center;
+  font-size: 34px;
+}
+
+.theme-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-content-container{
+  font-size: 20px;
+}
+
+.duck-img {
+  width: 100%;
+  padding: 40px;
+}
+
+.events-header{
+  margin: 32px;
+  text-align: center;
+  font-size: 34px;
+}
+
+@media only screen and (max-width : 512px) {
+  .hero-container { height:  70vh;}
+}

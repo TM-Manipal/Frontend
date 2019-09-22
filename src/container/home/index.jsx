@@ -16,10 +16,10 @@ export default class Home extends React.Component {
   componentWillMount = () => {
     this.setState({
       events : [{
-        name : "Capture The Flag",
+        name : "Pwn The Flag",
       },
       {
-        name : "Mad Ads",
+        name : "Ad Invaders",
       },
       {
         name : "Gaming",
@@ -28,16 +28,16 @@ export default class Home extends React.Component {
         name : "Inquizitive",
       },
       {
-        name : "Mad Ads",
+        name : "Master Tycoon",
       },
       {
-        name : "Gaming",
+        name : "Robotron",
       },
       {
-        name : "Capture The Flag",
+        name : "Tetris",
       },
       {
-        name : "Mad Ads",
+        name : "Timeless Treasures",
       }]
     })
   }

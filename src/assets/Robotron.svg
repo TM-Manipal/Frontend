@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" rx="80" fill="url(#paint0_linear)"/>
+<line x1="150.141" y1="168.071" x2="55.071" y2="263.141" stroke="white" stroke-width="20" stroke-linejoin="round"/>
+<line x1="55.0711" y1="248.94" x2="150.141" y2="344.01" stroke="white" stroke-width="20" stroke-linejoin="round"/>
+<line x1="456.141" y1="248.985" x2="361.071" y2="344.055" stroke="white" stroke-width="20" stroke-linejoin="round"/>
+<line x1="362.071" y1="166.929" x2="457.141" y2="261.999" stroke="white" stroke-width="20" stroke-linejoin="round"/>
+<rect x="196" y="193" width="120" height="100" rx="10" stroke="white" stroke-width="20"/>
+<path d="M331 215V215C331.552 215 332 215.448 332 216V234C332 234.552 331.552 235 331 235V235V215Z" fill="#C4C4C4" stroke="white" stroke-width="20"/>
+<path d="M180 216C180 215.448 180.448 215 181 215V215V235V235C180.448 235 180 234.552 180 234V216Z" fill="#C4C4C4" stroke="white" stroke-width="20"/>
+<line x1="226" y1="318" x2="286" y2="318" stroke="white" stroke-width="20"/>
+<line x1="196" y1="343" x2="316" y2="343" stroke="white" stroke-width="20"/>
+<rect x="255" y="168" width="1" height="15" rx="0.5" fill="#C4C4C4" stroke="white" stroke-width="10"/>
+<circle cx="256" cy="161" r="10" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M286 227.472C284.938 228.422 283.537 229 282 229C278.686 229 276 226.314 276 223C276 221.463 276.578 220.062 277.528 219H271C268.239 219 266 221.239 266 224V241C266 243.761 268.239 246 271 246H281C283.761 246 286 243.761 286 241V227.472Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M246 227.472C244.938 228.422 243.537 229 242 229C238.686 229 236 226.314 236 223C236 221.463 236.578 220.062 237.528 219H231C228.239 219 226 221.239 226 224V241C226 243.761 228.239 246 231 246H241C243.761 246 246 243.761 246 241V227.472Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9D00"/>
+<stop offset="1" stop-color="#F26F16"/>
+</linearGradient>
+</defs>
+</svg>

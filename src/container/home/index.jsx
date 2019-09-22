@@ -25,7 +25,7 @@ export default class Home extends React.Component {
         name : "Gaming",
       },
       {
-        name : "Capture The Flag",
+        name : "Inquizitive",
       },
       {
         name : "Mad Ads",

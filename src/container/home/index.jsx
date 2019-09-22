@@ -14,32 +14,19 @@ export default class Home extends React.Component {
   }
 
   componentWillMount = () => {
-    this.setState({
-      events : [{
-        name : "Pwn The Flag",
-      },
-      {
-        name : "Ad Invaders",
-      },
-      {
-        name : "Gaming",
-      },
-      {
-        name : "Inquizitive",
-      },
-      {
-        name : "Master Tycoon",
-      },
-      {
-        name : "Robotron",
-      },
-      {
-        name : "Tetris",
-      },
-      {
-        name : "Timeless Treasures",
-      }]
-    })
+
+    fetch("http://15.206.28.152:3005/events/")
+      .then(res => res.json())
+      .then(
+        async (result) => {
+          await this.setState({
+            events: result.data
+          })
+        },
+        (error) => {
+          console.log({"err" : error})
+        }
+      )
   }
 
   render() {

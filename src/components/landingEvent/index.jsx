@@ -5,6 +5,7 @@ import "./style.css";
 export default class Hero extends React.Component {
   render() {
     const { events } = this.props;
+    console.log(events)
     return (
       <div>
         <Container>
@@ -14,14 +15,14 @@ export default class Hero extends React.Component {
             </Col>
           </Row>
           <Row>
-            {events.map((item, k) => {
+            { events != null ? events.map((item, k) => {
               return (
                 <Col md="3">
                   <div className="event-container">
                     <img
                       className="event-img"
                       src={require(`../../assets/${item.name.replace(
-                        / /g,
+                        /[\s-]+/g,
                         "_"
                       )}.svg`)}
                       alt=""
@@ -30,7 +31,7 @@ export default class Hero extends React.Component {
                   </div>
                 </Col>
               );
-            })}
+            }) : null}
           </Row>
         </Container>
       </div>

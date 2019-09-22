@@ -11,7 +11,7 @@ export default class Theme extends React.Component {
         <div>
             <Row>
               <Col md="12" >
-                <div className="theme-header"> Theme </div>
+                <div className="theme-header"> Theme <span className="theme-sub-header">Pixel</span> </div>
               </Col>
             </Row>
             <Row className="theme-container">

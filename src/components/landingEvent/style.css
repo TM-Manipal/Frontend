@@ -1,0 +1,24 @@
+.events-header{
+  margin: 32px;
+  text-align: center;
+  font-size: 34px;
+}
+
+.event-container{
+  padding: 35px 40px;
+  transition: 300ms;
+}
+
+.event-img{
+  width: 100%;
+}
+
+.hero-event-name {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.event-container:hover {
+  transform: scale(0.95);
+}

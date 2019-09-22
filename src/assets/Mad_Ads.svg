@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9d9d9d"/>
+      <stop offset="1" stop-color="#747474"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="1" stop-opacity="0.149"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.582" gradientTransform="translate(0 0.07) scale(1 0.859)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e5e5e5"/>
+      <stop offset="1" stop-color="#aaa9a9"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-150 -154)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="512" height="512" rx="80" transform="translate(150 154)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="448" height="448" rx="70" transform="translate(182 186)" fill="#2e2e2e"/>
+    <g id="Group_2" data-name="Group 2">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Rectangle_4" data-name="Rectangle 4" d="M60,0h3a0,0,0,0,1,0,0V286a0,0,0,0,1,0,0H60A60,60,0,0,1,0,226V60A60,60,0,0,1,60,0Z" transform="translate(217 222)" fill="#62bb47"/>
+        <rect id="Rectangle_5" data-name="Rectangle 5" width="63" height="286" transform="translate(280 222)" fill="#fcb827"/>
+        <rect id="Rectangle_6" data-name="Rectangle 6" width="63" height="286" transform="translate(343 222)" fill="#f5821f"/>
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="63" height="286" transform="translate(406 222)" fill="#e03a3e"/>
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="63" height="286" transform="translate(469 222)" fill="#963d97"/>
+        <path id="Rectangle_9" data-name="Rectangle 9" d="M0,0H3A60,60,0,0,1,63,60V226A60,60,0,0,1,3,286H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(532 222)" fill="#009ddc"/>
+      </g>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="378" height="286" rx="60" transform="translate(217 222)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(535 538)" stroke="#707070" stroke-width="1" fill="url(#radial-gradient)">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(217 538)" stroke="#707070" stroke-width="1" fill="url(#radial-gradient)">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <text id="Mad_Ads" data-name="Mad Ads" transform="translate(356 525)" fill="#9b9b9b" font-size="24" font-family="OriyaMN-Bold, Oriya MN" font-weight="700"><tspan x="0" y="21">Mad Ads</tspan></text>
+  </g>
+</svg>

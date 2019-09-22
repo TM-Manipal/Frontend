@@ -11,7 +11,7 @@ const App = () => {
     <Navbar/> 
       <Router>
         <Home path="/" />
-        <Event path="/event" />
+        <Event path="/events" />
       </Router>
     </div>
   );

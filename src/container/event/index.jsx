@@ -67,7 +67,7 @@ export default class Event extends React.Component {
       })
     }
     //make post to server
-    fetch("http://"+ process.env.REACT_APP_API_URL + ":" + process.env.REACT_APP_API_PORT +"/events/"+ this.currentEvent.id+"/register", {
+    fetch("http://"+ process.env.REACT_APP_API_URL + ":" + process.env.REACT_APP_API_PORT +"/events/"+ this.state.currentEvent.id+"/register", {
       method: "post",
       headers: {
         'Accept': 'application/json',

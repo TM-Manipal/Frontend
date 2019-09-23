@@ -1,5 +1,7 @@
 import React from 'react';
 import "./style.css";
+import MIT from "../../assets/MIT.png";
+
 import {
   Collapse,
   Navbar,
@@ -28,7 +30,7 @@ class NavigationBar extends React.Component {
     return (
       <div>
         <Navbar color="white" light expand="md">
-          <NavbarBrand href="/">TechnoMelange</NavbarBrand>
+          <NavbarBrand href="/"><img width="40%" src={MIT} alt="MIT" /></NavbarBrand>
           
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

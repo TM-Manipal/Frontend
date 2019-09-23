@@ -3,13 +3,6 @@ import "./style.css";
 import { Row, Col, Button } from 'reactstrap';
 
 class Card extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-
-    }
-  }
   
   render() {
     return (
@@ -23,7 +16,7 @@ class Card extends React.Component {
             alt=""
           />
           <Col style={{marginTop: "15px", marginBottom:"15px", textAlign: "center"}}>
-            <Button color="primary">Register</Button>
+            <Button onClick={() => {this.props.toggle(this.props.id)}} color="primary">Register</Button>
           </Col>
         </Col>
         <Col>

@@ -3,3 +3,26 @@
   width: 100vw;
   background-color: blue;
 }
+
+.blink-text {
+	animation: blinkingText 0.8s infinite;
+}
+
+@keyframes blinkingText {
+	0% {
+		color: #000;
+	}
+	49% {
+		color: transparent;
+	}
+	50% {
+		color: transparent;
+	}
+	75% {
+		color: transparent;
+	}
+	100% {
+		color: #000;
+	}
+}
+

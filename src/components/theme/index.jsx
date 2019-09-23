@@ -11,16 +11,16 @@ export default class Theme extends React.Component {
         <div>
             <Row>
               <Col md="12" >
-                <div className="theme-header"> Theme <span className="theme-sub-header">Pixel</span> </div>
+                <div className="theme-header"> Theme <span className="theme-sub-header">Arcade</span> </div>
               </Col>
             </Row>
             <Row className="theme-container">
               <Col md="8" className="theme-content-container">
                 <p>
                 Loud, bright, colorful. The arcades of the late 20th century were the place to hang out after a long day at school. 
-                The sounds of 8bit music and people cheering filled the room. 
-                Arcades and by extension arcade games have paved the way for modern game that so many of us play. 
-                It is important to remember the humble origins of the gaming culture and why it still is relevant today. 
+                The sounds of 8 bit music and people cheering, filled the room. 
+                Arcades and by extension arcade games have paved the way for modern games that so many of us play. 
+                It is important to remember the humble origins of the gaming culture and why it still relevant today. 
                 Join us as we embark on a new adventure to set our highest score yet and relive the best years of gaming history.
                 </p>
               </Col>

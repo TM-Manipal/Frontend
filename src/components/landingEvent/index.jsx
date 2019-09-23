@@ -17,7 +17,7 @@ export default class Hero extends React.Component {
           <Row>
             { events != null ? events.map((item, k) => {
               return (
-                <Col md="3">
+                <Col key={k} md="3">
                   <div className="event-container">
                     <img
                       className="event-img"

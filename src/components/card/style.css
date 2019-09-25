@@ -4,3 +4,10 @@
 	margin-bottom: 40px;
 
 }
+
+.breakit{
+	height: 32px;
+	margin-bottom: 32px;
+	background: url(../../assets/block.jpg) repeat-x 0 0;
+	border: 1;
+}

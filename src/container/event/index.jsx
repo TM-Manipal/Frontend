@@ -94,7 +94,10 @@ export default class Event extends React.Component {
         {
           this.state.events.map((event, i) => {
             return(
+              <>
               <Card id={event.id} toggle={this.toggle} key={i} name={event.name} venue={event.venue} startDate={event.startDate} endDate={event.endDate} type={event.type} rules={event.rules} description={event.description} eventHeads={event.eventHeads}/>
+              <hr className="breakit"/>
+              </>
             )
           })
         }

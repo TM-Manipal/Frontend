@@ -42,7 +42,7 @@ class Card extends React.Component {
             })
           }
           Venue: {this.props.venue}
-          <hr/>
+          {/* <hr/> */}
         </Col>
       </Row>
     );

@@ -14,10 +14,7 @@ class Card extends React.Component {
               "_"
             )}.png`)}
             alt=""
-          />
-          <Col style={{marginTop: "15px", marginBottom:"15px", textAlign: "center"}}>
-            <Button onClick={() => {this.props.toggle(this.props.id)}} color="primary">Register</Button>
-          </Col>
+          />          
         </Col>
         <Col>
           <h4>{this.props.type}</h4>
@@ -43,7 +40,7 @@ class Card extends React.Component {
               )
             })
           }
-          Venue: {this.props.venue} AB4
+          Venue: {this.props.venue}
           <hr/>
         </Col>
       </Row>

@@ -8,7 +8,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from 'reactstrap';
 
 class NavigationBar extends React.Component {
@@ -28,17 +28,20 @@ class NavigationBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="white" light expand="md">
-          <img width="20%" src={MIT} alt="MIT" />
+        <Navbar color="light" light expand="md">
+          <img width="30%" src={MIT} alt="MIT" />
           
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/"><h3>Home</h3></NavLink>
+                <NavLink href="/"><h4>Home</h4></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/events"><h3 className="blink-text">Register</h3></NavLink>
+                <NavLink href="/events"><h4>Events</h4></NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/register"><h4 className="blink-text">Register</h4></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

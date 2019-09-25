@@ -16,6 +16,7 @@ class Card extends React.Component {
             alt=""
           />          
         </Col>
+        <br/><br/>
         <Col>
           <h4>{this.props.type}</h4>
           {this.props.startDate}

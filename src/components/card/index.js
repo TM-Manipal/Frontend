@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import { Row, Col, Button } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 class Card extends React.Component {
   

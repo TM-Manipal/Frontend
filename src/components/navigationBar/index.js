@@ -29,7 +29,7 @@ class NavigationBar extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <img width="75%" src={MIT} alt="MIT" />
+          <img width="40%" src={MIT} alt="MIT" />
           
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -39,6 +39,9 @@ class NavigationBar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/events"><h4>Events</h4></NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/register" className="blink-text"><h4>register</h4></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

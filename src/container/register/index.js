@@ -48,8 +48,7 @@ export default class Register extends React.Component {
   submitForm = () => {
     let data = this.state.payload.data;
     console.log(data);
-    data.filter(Boolean) 
-    console.log(data);
+    let cleardata = data.filter(() => { return true });
   }
 
   componentWillMount () {

@@ -56,7 +56,7 @@ export default class Register extends React.Component {
     for (var i = 0; i < 10; i++) {
         this.participant.push(
 
-            <Row form >
+            <Row form key={i}>
             <Col md={12}>
               { "Participant " +  (i + 1)}
             </Col>
@@ -92,7 +92,7 @@ export default class Register extends React.Component {
           <Col md={4}>
             <FormGroup check>
           <Label check className="accommodation-chk">
-            <Input  onChange={(e) => this.changeAccommodation(e)} type="checkbox" />{' '}
+            <Input  id={'checkbox-' + i} onChange={(e) => this.changeAccommodation(e)} type="checkbox" />{' '}
             Accommodation Required
           </Label>
         </FormGroup>

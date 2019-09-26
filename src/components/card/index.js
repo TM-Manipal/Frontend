@@ -12,7 +12,7 @@ class Card extends React.Component {
             src={require(`../../assets/${this.props.name.replace(
               /[\s-]+/g,
               "_"
-            )}.png`)}
+            )}.svg`)}
             alt=""
           />          
         </Col>

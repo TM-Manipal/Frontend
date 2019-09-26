@@ -25,19 +25,34 @@ export default class Register extends React.Component {
     })
   }
 
-  clgParticipant(e, target){
+  changeParticipant(e, target){
     let data  = this.state.payload;
     let pre_idx = e.currentTarget.id;
     let idx = pre_idx.substring(pre_idx.indexOf('-') + 1);
     data.data[idx] = {...data.data[idx], [target] : e.currentTarget.value }
-    console.log(data)
     this.setState({
       payload : data
     })
   }
 
-  render() {
+  changeAccommodation(e) {
+    let data  = this.state.payload;
+    let pre_idx = e.currentTarget.id;
+    let idx = pre_idx.substring(pre_idx.indexOf('-') + 1);
+    data.data[idx] = {...data.data[idx], accommodation : e.currentTarget.checked };
+    this.setState({
+      payload : data
+    })
+  }
 
+  submitForm = () => {
+    let data = this.state.payload.data;
+    console.log(data);
+    data.filter(Boolean) 
+    console.log(data);
+  }
+
+  componentWillMount () {
     for (var i = 0; i < 10; i++) {
         this.participant.push(
 
@@ -48,26 +63,27 @@ export default class Register extends React.Component {
             <Col md={6}>
               <FormGroup>
                 <Label for="name">Name</Label>
-                <Input name="name" id={'name-' + i} onChange={(e) => this.clgParticipant(e, 'name')}/>
+                <Input name="name" id={'name-' + i} onChange={(e) => this.changeParticipant(e, 'name')}/>
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup>
                 <Label for="email">Email</Label>
-                <Input type="email" name="email-" id={'email-' + i} onChange={(e) => this.clgParticipant(e, 'email')} />
+                <Input type="email" name="email-" id={'email-' + i} onChange={(e) => this.changeParticipant(e, 'email')} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="phNum">Phone Number</Label>
-                <Input name="phNum" id={'phnum-' + i} onChange={(e) => this.clgParticipant(e, 'phnum')} />
+                <Input name="phNum" id={'phnum-' + i} onChange={(e) => this.changeParticipant(e, 'phnum')} />
               </FormGroup>
             </Col>
             
           <Col md={4}>
           <FormGroup>
             <Label for="exampleSelect">Gender</Label>
-          <Input type="select" name="select" id={'gender-' + i} onChange={(e) => this.clgParticipant(e, 'gender')}>
+          <Input type="select" name="select" id={'gender-' + i} onChange={(e) => this.changeParticipant(e, 'gender')}>
+            <option></option>
             <option>Male</option>
             <option>Female</option>
           </Input>
@@ -76,15 +92,17 @@ export default class Register extends React.Component {
           <Col md={4}>
             <FormGroup check>
           <Label check className="accommodation-chk">
-            <Input  type="checkbox" />{' '}
+            <Input  onChange={(e) => this.changeAccommodation(e)} type="checkbox" />{' '}
             Accommodation Required
           </Label>
         </FormGroup>
           </Col>
           </Row>
-
           )
       }
+  }
+
+  render() {
 
     return (
       <Container>
@@ -101,7 +119,7 @@ export default class Register extends React.Component {
             return item;
           })
         }
-      <Button>Submit</Button>
+      <Button onClick={this.submitForm}>Submit</Button>
       </Form>
       </Container>
     )

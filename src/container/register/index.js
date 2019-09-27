@@ -153,12 +153,11 @@ export default class Register extends React.Component {
           General Rules and instructions:<br/>
           * Registration fees of ₹1000 will be collected from each college during spot registration<br/>
           * Reporting Time: 11:00 AM (All participants are supposed to report on or before 11:00 AM)<br/>
-          * Maximum participants is 10<br/>
+          * Maximum allowed participants: 10<br/>
           * College ID and permission letter from the college is mandatory<br/>
           * Schedule of the events will be provided on the spot<br/>
-          * All the participants are required to be available at the campus for both the events<br/>
+          * All the participants are required to be available at the campus for both the days<br/>
           * Accommodation can be availed by outstation participants, please fill the form accordingly<br/>
-          * Please fill the form completly, a minimum of 5 participants are necessary to be entered<br/>
           <br/>
           <br/>
         <Col md={12}>

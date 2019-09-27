@@ -1,7 +1,7 @@
 import React from "react";
 import {
  Container, 
- Col, Row, Button, Form, FormGroup, Label, Input
+ Col, Row, Button, Form, FormGroup, Label, Input, FormText
 } from 'reactstrap';
 
 export default class Register extends React.Component {
@@ -71,7 +71,6 @@ export default class Register extends React.Component {
       return;
     }
 
-    console.log(this.state.payload)
     fetch("http://"+ process.env.REACT_APP_API_URL + ":" + process.env.REACT_APP_API_PORT +"/events/register", {
       method: 'POST',
       headers: {
@@ -81,7 +80,8 @@ export default class Register extends React.Component {
     })
       .then(res => res.json())
       .then(
-        async (result) => {          
+        async (result) => {    
+
           alert(result.message)
         },
         (error) => {
@@ -145,7 +145,18 @@ export default class Register extends React.Component {
     return (
       <Container>
         <Form>
-
+        <br/>
+          General Rules and instructions:<br/>
+          * Registration fees will be collected during spot registration<br/>
+          * Reporting Time: 11:00 AM (All participants are supposed to report on or before 11:00 AM)<br/>
+          * Maximum participants is 10<br/>
+          * College ID and permission letter from the college is mandatory<br/>
+          * Schedule of the events will be provided on the spot<br/>
+          * All the participants are required to be available at the campus for both the events<br/>
+          * Accommodation can be availed by outstation participants, please fill the form accordingly<br/>
+          * Please fill the form completly, a minimum of 5 participants are necessary to be entered<br/>
+          <br/>
+          <br/>
         <Col md={12}>
               <FormGroup>
                 <Label for="collegeName">College Name</Label>

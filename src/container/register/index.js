@@ -151,7 +151,7 @@ export default class Register extends React.Component {
         <Form>
         <br/>
           General Rules and instructions:<br/>
-          * Registration fees will be collected during spot registration<br/>
+          * Registration fees of ₹1000 will be collected from each college during spot registration<br/>
           * Reporting Time: 11:00 AM (All participants are supposed to report on or before 11:00 AM)<br/>
           * Maximum participants is 10<br/>
           * College ID and permission letter from the college is mandatory<br/>

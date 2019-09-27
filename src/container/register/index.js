@@ -1,8 +1,9 @@
 import React from "react";
 import {
  Container, 
- Col, Row, Button, Form, FormGroup, Label, Input, FormText
+ Col, Row, Button, Form, FormGroup, Label, Input
 } from 'reactstrap';
+import { navigate } from "@reach/router";
 
 export default class Register extends React.Component {
 
@@ -51,6 +52,7 @@ export default class Register extends React.Component {
       if(!item.accommodation) {
         item.accommodation = false;
       }
+      return 0;
     })
     let cleardata = data.filter(() => { return true });
 
@@ -81,8 +83,10 @@ export default class Register extends React.Component {
       .then(res => res.json())
       .then(
         async (result) => {    
-
           alert(result.message)
+          if(result.status === 200) {
+            navigate("/");
+          }
         },
         (error) => {
           alert("Please fill the form completly as per the instructions")

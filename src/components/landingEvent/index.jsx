@@ -1,11 +1,17 @@
 import React from "react";
 import { Row, Col, Container } from "reactstrap";
 import "./style.css";
+import { navigate } from "@reach/router";
 
 export default class Hero extends React.Component {
+  
+  handleClick = () => {
+    navigate("/events");
+  }
+
   render() {
     const { events } = this.props;
-    console.log(events)
+  
     return (
       <div>
         <Container>
@@ -19,7 +25,7 @@ export default class Hero extends React.Component {
               return (
                 <Col key={k} md="3">
                   <div className="event-container">
-                    <img
+                    <img onClick={this.handleClick}
                       className="event-img"
                       src={require(`../../assets/${item.name.replace(
                         /[\s-]+/g,

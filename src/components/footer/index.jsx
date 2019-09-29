@@ -16,9 +16,9 @@ export default class Register extends React.Component {
         <div>
           If you have any issues or queries, please feel free to contact
           <br />
-          <Contact name="name1" number="99999999" />
+          <Contact name="Sushanth Dias" number="+91 8197972344" />
           &ensp;or&ensp;
-          <Contact name="name2" number="99999999" />
+          <Contact name="Kaushik Shetty" number="+91 9886515308" />
         </div>
       </div>
     );

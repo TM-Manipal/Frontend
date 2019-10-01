@@ -3,6 +3,7 @@ import {
  Container, 
  Col, Row, Button, Form, FormGroup, Label, Input
 } from 'reactstrap';
+import "./style.css";
 import { navigate } from "@reach/router";
 
 export default class Register extends React.Component {
@@ -157,7 +158,10 @@ export default class Register extends React.Component {
           * College ID and permission letter from the college is mandatory<br/>
           * Schedule of the events will be provided on the spot<br/>
           * All the participants are required to be available at the campus for both the days<br/>
+          * Teams need to bring at least 2 laptops, one for Hackathon and one for CTF, and preferably have their own internet connection<br/>
           * Accommodation can be availed by outstation participants, please fill the form accordingly<br/>
+          <br/>
+          <strong className="blink-registration-close">* REGISTRATION CLOSES ON 6th OF OCTOBER</strong><br/>
           <br/>
           <br/>
         <Col md={12}>
@@ -172,6 +176,7 @@ export default class Register extends React.Component {
           })
         }
       <Button onClick={this.submitForm}>Submit</Button>
+      <br/>
       </Form>
       </Container>
     )

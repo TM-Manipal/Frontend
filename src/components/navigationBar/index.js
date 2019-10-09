@@ -40,9 +40,6 @@ class NavigationBar extends React.Component {
               <NavItem>
                 <NavLink href="/events"><h4>Events</h4></NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="/register" className="blink-text"><h4>register</h4></NavLink>
-              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

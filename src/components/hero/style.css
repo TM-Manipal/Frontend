@@ -18,6 +18,14 @@
   width: 100%;
 }
 
+.downloadLink {
+  position: absolute;
+  margin-top: 25%;
+  left: 25%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
 
 @media only screen and (max-width : 512px) {
   .hero-container { height:  70vh;}
